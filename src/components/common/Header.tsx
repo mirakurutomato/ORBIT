@@ -21,7 +21,7 @@ export function Header() {
             className="flex items-center gap-2 text-xl font-bold tracking-tight text-gray-900"
             whileHover={{ scale: 1.02 }}
           >
-            <img src="/orbit.svg" alt="ORBIT" className="w-8 h-8" />
+            <img src={`${import.meta.env.BASE_URL}orbit.svg`} alt="ORBIT" className="w-8 h-8" />
             <span className="text-orbit-600">ORBIT</span>
           </motion.a>
 
