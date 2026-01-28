@@ -17,7 +17,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <motion.a
-            href={import.meta.env.BASE_URL}
+            href={`${import.meta.env.BASE_URL}#about`}
             className="flex items-center gap-2 text-xl font-bold tracking-tight text-gray-900"
             whileHover={{ scale: 1.02 }}
           >
