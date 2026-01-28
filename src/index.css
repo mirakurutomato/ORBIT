@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+  --color-orbit-50: #eff6ff;
+  --color-orbit-100: #dbeafe;
+  --color-orbit-200: #bfdbfe;
+  --color-orbit-300: #93c5fd;
+  --color-orbit-400: #60a5fa;
+  --color-orbit-500: #3b82f6;
+  --color-orbit-600: #2563eb;
+  --color-orbit-700: #1d4ed8;
+  --color-orbit-800: #1e40af;
+  --color-orbit-900: #1e3a8a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fafbfc;
+  color: #1f2937;
+}
+
+@keyframes marquee-seamless {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-seamless {
+  animation: marquee-seamless 60s linear infinite;
+}
